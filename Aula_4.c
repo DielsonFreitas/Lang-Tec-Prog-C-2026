@@ -27,12 +27,14 @@ int main(int argc, char *argv[]) {
 	// Exercicio 2
 	
 	
-	double valor;
+	double valor, notacaoCientifica;
 	
 	printf("\nDigite o valor: ");
 	scanf("%lf", &valor);
+
+	notacaoCientifica = valor * 10;
 	
-	printf("Valor em notação cientifica: %lf", valor);
+	printf("Valor em notaÃ§Ã£o cientifica: %lf", notacaoCientifica);
 	
 	
 	// Exercicio 3

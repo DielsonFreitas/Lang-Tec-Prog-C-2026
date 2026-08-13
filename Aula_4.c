@@ -27,31 +27,78 @@ int main(int argc, char *argv[]) {
 	// Exercicio 2
 	
 	
-	double valor, notacaoCientifica;
+	double valor;
 	
 	printf("\nDigite o valor: ");
 	scanf("%lf", &valor);
-
-	notacaoCientifica = valor * 10;
 	
 	printf("Valor em notação cientifica: %lf", notacaoCientifica);
 	
 	
 	// Exercicio 3
 	
-	int num_1, num_2, binario;
-	num_2 = 2;
+	int numero;
 	
 	printf("\nDigite um numero: ");
-	scanf("%f", &num_1);
+	scanf("%f", &numero);
 	
 	
-	binario = (num_1 * 10) % num_2;
+	for ( int i = 7; i >= 0; i--){
+		printf("%d", (numero >> i) & 1);
+	}
 	
-	printf("Valor em binario: %f\n", binario);
+	//Exercicio 4
+
+	float salario, vendas, comissao;
+
+	printf("\nDigite o salario: ");
+	scanf("%f", &salario);
+
+	printf("\nTotal de vendas: ");
+	scanf("%f", &vendas);
+
+	comissao = salario + (vendas * 0.15);
+
+	printf("Valor a receber: %.2f", comissao);
+
+	//Exercicio 5
+
+	int valor_1, valor_2, valor_3, valor_4;
+	float media;
+	
+	printf("\nDigite quatro valores: ");
+	scanf("%d", &valor_1);
+	scanf("%d", &valor_2);
+	scanf("%d", &valor_3);
+	scanf("%d", &valor_4);
+
+	media = (valor_1 + valor_2 + valor_3 + valor_4) / 4;
+
+	printf("A media sera de: %.2f", media);
+
+	// Exercicio 6
+
+
+	// Exercicio 7
+
+	float raio, pi, valor_raio, total;
+	pi = 3.14159;
+
+	printf("\nDigite o valor do raio(R): ");
+	scanf("%f", &raio);
+
+	valor_raio = raio * raio * raio;
+	total = (4.0/3) * pi * valor_raio;
+
+	printf("Valor do raio(R): %f", total);
+	
+	
+	
 	
 	
 	
 	
 	return 0;
 }
+
+

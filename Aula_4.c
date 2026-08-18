@@ -64,7 +64,7 @@ int main(int argc, char *argv[]) {
 	
 		
 	printf("O numero %d em bin: = %d%d%d%d%d%d%d", n, res%2,bit_2,bit_4,bit_8,bit_16,bit_32,bit_64);
-	}
+	
 	
 	//Exercicio 4
 

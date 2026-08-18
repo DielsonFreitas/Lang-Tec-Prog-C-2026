@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <math.h>
 
 /* run this program using the console pauser or add your own getch, system("pause") or input loop */
 
@@ -110,9 +111,26 @@ int main(int argc, char *argv[]) {
 	total = (4.0/3) * pi * valor_raio;
 
 	printf("Valor do raio(R): %f", total);
+
+	//Exercicio 8
+
+	int x1, x2, y1, y2, p1, p2;
+	float dist;
 	
+	printf("Insira o valor do par ordenado p1(x1,y1); ");
+	scanf("%d", &x1);
+	scanf("%d", &y1);
 	
+	printf("Insira o valor do par ordenado p2(x2,y2); ");
+	scanf("%d", &x2);
+	scanf("%d", &y2);
+
+	p1 = pow(x2-x1,2);
+	p2 = pow(y2-y1,2);
 	
+	dist = sqrt(p1 + p2);
+
+	printf("A distancia entre P1 e P2 = %f", dist);
 	
 	
 	

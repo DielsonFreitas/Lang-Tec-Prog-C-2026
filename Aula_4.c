@@ -37,14 +37,33 @@ int main(int argc, char *argv[]) {
 	
 	// Exercicio 3
 	
-	int numero;
+	int n, res;
+	int bit_64, bit_32, bit_16, bit_8, bit_4, bit_2;
 	
-	printf("\nDigite um numero: ");
-	scanf("%f", &numero);
+	printf("Insira um valor: ");
+	scanf("%d", &n);
+	
+	bit_64 = n%2;
+	res = n/2;
+	
+	bit_32 = res%2;
+	res = res/2;
+	
+	bit_16 = res%2;
+	res = res/2;
+	
+	bit_8 = res%2;
+	res = res/2;
+	
+	bit_4 = res%2;
+	res = res/2;
+	
+	bit_2 = res%2;
+	res = res/2;
 	
 	
-	for ( int i = 7; i >= 0; i--){
-		printf("%d", (numero >> i) & 1);
+		
+	printf("O numero %d em bin: = %d%d%d%d%d%d%d", n, res%2,bit_2,bit_4,bit_8,bit_16,bit_32,bit_64);
 	}
 	
 	//Exercicio 4

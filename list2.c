@@ -113,30 +113,18 @@ int main(){
 
     //Exercicio 10
 
-    int num_1, num_2, num_3, maior;
-
-    printf("\nPrimeiro valor: ");
-    scanf("%d", &num_1);
-
-    printf("\nSegundo valor: ");
-    scanf("%d", &num_2);
-
-    printf("\nTerceiro valor: ");
-    scanf("%d", &num_3);
-
-    if (num_1 >= num_2 && num_1 >= num_3){
-        maior = num_1;
-    }
-
-    else
-        if (num_2 >= num_3){
-            maior = num_2;
-        }
-    else{
-        maior = num_3;
-    }
-
-    printf("eh o maior: %d", maior);
-
-    return 0;
+    int a, b, c, maior, maior_temp;
+		
+	printf("Digite os tres valores a serem comparados: ");
+	scanf("%d %d %d", &a, &b, &c);
+	abs(maior_temp);                                                     //retorna o valor absluto sem sinal
+	
+	maior_temp = ((a+b)+abs(a-b)) / 2; // somente faz a comparação de a e b.
+	
+	maior = ((maior_temp + c) + abs(maior_temp - c)) / 2; // inclui o valor de c.
+	
+	printf("O maior entre |%d|%d|%d|: %d",a, b, c, maior);	
+	
+	
+	return 0;
 }

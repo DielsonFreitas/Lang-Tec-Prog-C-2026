@@ -91,7 +91,19 @@ int main(){
     printf("\nTerceiro ganhador ira receber: %lf\n", terceiro);
 
     //Exercicio 8
-
+	
+	int tempo, horas, minutos, segundos;
+	
+	printf("Digite o tempo em segundos: ");
+	scanf("%d", &tempo);
+	
+	horas = (tempo / 3600 );
+	minutos = (tempo % 3600) / 60;
+	segundos = (tempo % 60);
+	
+	
+	printf("O tempo sera %d horas, %d minutos, %d segundos",horas, minutos, segundos);
+	
 
 
     //Exercicio 9

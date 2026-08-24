@@ -97,7 +97,18 @@ int main(int argc, char *argv[]) {
 	printf("A media sera de: %.2f", media);
 
 	// Exercicio 6
-
+	int idade, anos, meses, dias;
+	
+	
+	printf("Digite a idade em dias: ");
+	scanf("%d", &idade);
+	
+	
+	anos = (idade / 365);
+	meses = (idade % 365) / 30;
+	dias = (idade % 365) % 30;
+	
+	printf(" Idade %d, %d meses, %d dias", anos, meses, dias);
 
 	// Exercicio 7
 

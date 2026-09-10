@@ -1,0 +1,81 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+
+int mult(int digto, int valor){
+	return digto*valor;
+}
+
+
+
+int main(int argc, char *argv[]) {
+	
+	/*Desenvolva um programa que receba um número de CPF e informe se ele é Válido ou Inválido.
+Crie um campo de entrada para os números;
+Implemente a lógica de cálculo dos dois dígitos verificadores;
+Mostre o resultado final na tela.
+Algoritmo de Validação:
+1º dígito: Multiplique os 9 primeiros números por uma contagem regressiva de 10 a 2. Some tudo, multiplique por 10 e pegue o resto da divisão por 11.
+2º dígito: Repita o processo com os 10 primeiros números, usando pesos de 11 a 2.
+Dica: Se o resto da conta for 10, considere o dígito como 0.*/
+
+	int dg1,dg2,dg3,dg4,dg5,dg6,dg7,dg8,dg9,dv,dv2;
+	int soma, resto; 
+	
+	
+	scanf("%d %d %d . %d %d %d . %d %d %d - %d %d", &dg1, &dg2, &dg3, &dg4, &dg5, &dg6, &dg7, &dg8, &dg9, &dv, &dv2);
+	printf("Confirme o CPF: %d%d%d.%d%d%d.%d%d%d-%d%d", dg1, dg2, dg3, dg4, dg5, dg6, dg7, dg8, dg9, dv, dv2);
+	
+	soma = mult(dg1,10)+mult(dg2,9)+mult(dg3,8)+mult(dg4,7)+mult(dg5,6)+mult(dg6,5)+mult(dg7,4)+mult(dg8,3)+mult(dg9,2);
+	soma *= 10;
+	resto = soma % 11;
+	
+		
+	return 0;
+	
+}
+	
+	
+	
+	
+	
+
+
+
+
+
+	
+	
+	/*Crie um conversor de temperatura entre Celsius (C) e Fahrenheit (F), que verifique qual é a grandeza de entrada e realize a conversão correta.
+Solicite uma temperatura de entrada e identifique a grandeza;
+Com uma entrada em Celsius, deve-se calcular o valor em Fahrenheit;
+Com uma entrada em Fahrenheit, deve-se calcular o valor em Celsius;
+Mostre na tela o resultado da conversão.*/
+	
+/*	float temperatura, celsius, fahrenheit;
+	
+	printf("Temperatura: ");
+	scanf("%f", &temperatura);
+	
+	celsius = ( temperatura * 9/5) + 32;
+	fahrenheit = (celsius - 32) * 5/9;
+	
+	printf("\nTemperatura Celsius em Fahrenheit: %.2f graus.", celsius);
+	printf("\nTemperatura Fahrenheit em Celsius: %.2f graus.", fahrenheit);
+	
+	
+		/*Construa um programa que receba o nome de um aluno e três notas, calculando a média e a situação final.
+Solicite 3 notas de entrada;Calcule a média e verifique o critério de aprovação;Mostre o resultado final formatado.
+
+	
+	return 0;
+}
+*/
+
+
+
+
+	
+
+

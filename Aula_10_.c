@@ -72,7 +72,7 @@ Com uma entrada em Celsius, deve-se calcular o valor em Fahrenheit;
 Com uma entrada em Fahrenheit, deve-se calcular o valor em Celsius;
 Mostre na tela o resultado da conversão.*/
 	
-/*	float temperatura, celsius, fahrenheit;
+	float temperatura, celsius, fahrenheit;
 	
 	printf("Temperatura: ");
 	scanf("%f", &temperatura);
@@ -84,13 +84,12 @@ Mostre na tela o resultado da conversão.*/
 	printf("\nTemperatura Fahrenheit em Celsius: %.2f graus.", fahrenheit);
 	
 	
-		/*Construa um programa que receba o nome de um aluno e três notas, calculando a média e a situação final.
-Solicite 3 notas de entrada;Calcule a média e verifique o critério de aprovação;Mostre o resultado final formatado.
+	
 
 	
 	return 0;
 }
-*/
+
 
 
 

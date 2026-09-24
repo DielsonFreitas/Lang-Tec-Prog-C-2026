@@ -33,7 +33,7 @@ int main(int argc, char *argv[]) {
 	printf("\nDigite o valor: ");
 	scanf("%lf", &valor);
 	
-	printf("Valor em notação cientifica: %lf", notacaoCientifica);
+	printf("Valor em notação cientifica: %lf", valor);
 	
 	
 	// Exercicio 3

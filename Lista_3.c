@@ -6,13 +6,13 @@
 
 int main(){
 	
-	/*Crie um conversor de temperatura entre Celsius (C) e Fahrenheit (F), que verifique qual È a grandeza de entrada e realize a convers„o correta.
+	/*Crie um conversor de temperatura entre Celsius (C) e Fahrenheit (F), que verifique qual √© a grandeza de entrada e realize a convers√£o correta.
  	Solicite uma temperatura de entrada e identifique a grandeza;
 	Com uma entrada em Celsius, deve-se calcular o valor em Fahrenheit;
 	Com uma entrada em Fahrenheit, deve-se calcular o valor em Celsius;
-	Mostre na tela o resultado da convers„o.*/
+	Mostre na tela o resultado da convers√£o.*/
 	
-	 int main(){
+	 
         
         float temperatura, celsius, fahrenheit;
         
@@ -32,9 +32,9 @@ int main(){
 
 
 	
-	/*Construa um programa que receba o nome de um aluno e trÍs notas, calculando a mÈdia e a situaÁ„o final.
+	/*Construa um programa que receba o nome de um aluno e tr√™s notas, calculando a m√©dia e a situa√ß√£o final.
 	Solicite 3 notas de entrada;
-	Calcule a mÈdia e verifique o critÈrio de aprovaÁ„o;
+	Calcule a m√©dia e verifique o crit√©rio de aprova√ß√£o;
 	Mostre o resultado final formatado.*/
 	
 	
@@ -75,7 +75,7 @@ int main(){
 	}
 	
 
-    /*Crie um simulador de saque que calcule a menor quantidade poss√≠vel de notas para um valor total.
+    /*Crie um simulador de saque que calcule a menor quantidade poss√É¬≠vel de notas para um valor total.
     Notas: R$ 100, R$ 50, R$ 10, R$ 5, R$ 2 e R$ 1.
     Exiba o resumo da contagem de cada nota entregue.*/
 

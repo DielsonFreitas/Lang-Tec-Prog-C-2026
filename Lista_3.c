@@ -112,6 +112,46 @@ int main(){
     printf("\n===== Obrigado pela Preferencia =====");
 
 
+/* cálculo do INSS.
+A função deve receber o salário bruto como parâmetro;
+A função deve retornar o valor do desconto do INSS;
+Não faça a impressão de dados dentro da função.
+Tabela Simplificada INSS:
+Até R$ 1.412,00: 7,5%
+De R$ 1.412,01 até R$ 2.666,68: 9%
+De R$ 2.666,69 até R$ 4.000,03: 12%
+Acima de R$ 4.000,04: 14% (Limitado ao teto)*/
+
+
+    float salario, calculo_inss, valor_total;
+
+    printf("Informe seu rendimentos salarial: ");
+    scanf("%f", &salario);
+
+    if (salario <= 1412.0){
+        calculo_inss = ((salario * 7.5) / 100);
+        valor_total = salario  - calculo_inss;
+        printf("Salario R$: %.2f com desconto INSS R$: %.2f, valor total com desconto R$: %.2f.",salario, calculo_inss, valor_total);
+    }
+    else if (salario >= 1412.0 && salario <= 2666.68){
+        calculo_inss = ((salario * 9.0) / 100);
+        valor_total = salario  - calculo_inss;
+        printf("Salario R$: %.2f com desconto INSS R$: %.2f, valor total com desconto R$: %.2f.",salario, calculo_inss, valor_total);
+    }
+    else if (salario >= 2666.68 && salario <= 4000.03){
+        calculo_inss = ((salario * 12.0) / 100);
+        valor_total = salario  - calculo_inss;
+        printf("Salario R$: %.2f com desconto INSS R$: %.2f, valor total com desconto R$: %.2f.",salario, calculo_inss, valor_total);
+    }
+    else{
+        calculo_inss = ((salario * 14) / 100);
+        valor_total = salario  - calculo_inss;
+        printf("Salario R$: %.2f com desconto INSS R$: %.2f, valor total com desconto R$: %.2f.",salario, calculo_inss, valor_total);
+    }
+    return 0;
+}
+
+
     return 0;
 
 }

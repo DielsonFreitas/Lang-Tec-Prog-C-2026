@@ -15,7 +15,7 @@ int main(int argc, char *argv[]) {
 		printf("%d\n", num2);
 	}
 
-// exercicio 2
+// exercicio 3
 
     int n, res;
 	int bit_64, bit_32, bit_16, bit_8, bit_4, bit_2;
